@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
-import Prodects from './components/prodects'
+import Prodects from './components/Prodects'
+
 
 function App() {
+  
   return (
     <>   
       <Prodects />
