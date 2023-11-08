@@ -11,7 +11,7 @@ const SingleCard = ({
     // qnty,
     btnHref,
 }) => {
-    console.log(itemId);
+    // console.log(itemId);
 
     // const { darkmode, setDarkmod } = useGlobalContext()
     // console.log(darkmode);
@@ -20,11 +20,12 @@ const SingleCard = ({
     // console.log(item);
 
     const [datas, setDatas] = useState(ProductData)
+    // console.log(datas);
     
 
     function decBtn() {
         const newItem = datas.map((item) =>
-            itemId === item.id ?{...item, qty: item.qty-1}:item
+            itemId === item.id && item.qty > 1 ? { ...item, qty: item.qty - 1 } : item
         );
         setDatas(newItem)
     };
@@ -33,6 +34,7 @@ const SingleCard = ({
             itemId === item.id ?{...item, qty: item.qty+1}:item
         );
         setDatas(newItem)
+        // console.log(newItem);
 
     };
 
@@ -48,7 +50,9 @@ const SingleCard = ({
                     </p>
                     <h3 className="text-lg font-semibold">Price: ₹{price}</h3>
                     <div>
-                        <h3 className="text-lg">{`Quantity:${datas.qty}`}</h3>
+                        {/* <h3 className="text-lg">{`Quantity:${datas.qty}`}</h3> */}
+                        <h3 className="text-lg">{`Quantity: ${datas.find(item => item.id === itemId).qty}`}</h3>
+
                         {/* <Inc_Dec_Button /> */}
                         <button onClick={decBtn} className="inline-block rounded-full border border-gray-3 px-5 py-1 mx-2 text-2xl font-medium text-body-color transition hover:border-primary hover:bg-black hover:text-white dark:border-dark-3 dark:text-dark-6">-</button>
                         <button onClick={incBtn} className="inline-block rounded-full border border-gray-3 px-5 py-1 font-medium text-body-color transition hover:border-primary hover:bg-black hover:text-white dark:border-dark-3 dark:text-dark-6 text-2xl">+</button>

@@ -2,12 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { GlobalContextProvider } from './context/useGlobalContext.jsx'
+// import { GlobalContextProvider } from './context/useGlobalContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <GlobalContextProvider>
+    {/* <GlobalContextProvider> */}
     <App />
-    </GlobalContextProvider>
+    {/* </GlobalContextProvider> */}
   </React.StrictMode>,
 )

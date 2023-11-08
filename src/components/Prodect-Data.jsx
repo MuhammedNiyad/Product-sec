@@ -38,6 +38,23 @@ const ProductData = [
         price: 59999,
         qty: 1,
         Image: "https://oasis.opstatics.com/content/dam/oasis/page/2023/in/product/11/marble.png"
-    }
+    },
+    {
+        id: 6,
+        model: "Lenovo IdeaPad Slim 3i",
+        desc: " 12th Gen W11 intel Core i3",
+        price: 49999,
+        qty: 1,
+        Image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJwFFnRei5o_C4dZOXxbHKViIpEOZUUf2akRxO4BhExObkDLooXrxUGfInm5ZkMd9rbTY&usqp=CAU"
+    },
+    {
+        id: 7,
+        model: "Nothing Phone (2) ",
+        desc: "5G 12GB RAM, 256GB",
+        price: 49999,
+        qty: 1,
+        Image: "https://www.phonestablets.co.ke/wp-content/uploads/2023/02/Nothing-Phone-2.jpg"
+    },
+
 ];
 export default ProductData;
