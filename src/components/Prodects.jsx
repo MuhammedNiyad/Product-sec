@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import ProductData from "./Prodect-Data";
 import SingleCard from "./SingleCard";
-import { useGlobalContext } from "../context/useGlobalContext";
+// import { useGlobalContext } from "../context/useGlobalContext";
 
 function Prodects(){
     const [items, setItems] = useState(ProductData)
@@ -16,8 +16,8 @@ function Prodects(){
                         <div className="grid gap-8 sm:grid-cols-4 lg:grid-cols-5">
                             {items.map((item) => (
                                 <div key={item.id}>
-                                    <SingleCard
-                                        id={item.id}
+                                    <SingleCard 
+                                        itemId={item.id}
                                         image={item.Image}
                                         CardTitle={item.model}
                                         CardDescription={item.desc}

@@ -37,7 +37,7 @@ const ProductData = [
         desc: "OnePlus 11R 256GB",
         price: 59999,
         qty: 1,
-        Image: "https://www.91-cdn.com/hub/wp-content/uploads/2023/10/OnePlus-11R-Solar-Red.jpg?tr=w-360,c-at_max,q-100,dpr-2,e-sharpen"
+        Image: "https://oasis.opstatics.com/content/dam/oasis/page/2023/in/product/11/marble.png"
     }
 ];
 export default ProductData;
